@@ -29,6 +29,17 @@ function closeModalInquire(elm) {
   });
 }
 
+function openMenu(elm) {
+  const menu = document.getElementById('menu');
+  const scrollTop = document.getElementById('scrollTopButton');
+  menu.addEventListener('click', () => {
+    menu.classList.toggle('open');
+    const nav = document.getElementById('drawerNav');
+    nav.classList.toggle('in');
+  });
+}
+
 scrollTop('scrollTopButton');
 openModalInquire('openInquireBtn');
 closeModalInquire('closeInquireBtn');
+openMenu('menu');

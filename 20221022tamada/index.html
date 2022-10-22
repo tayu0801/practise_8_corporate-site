@@ -11,21 +11,45 @@
   <body>
     <div class="container">
       <header class="header">
-        <img src="./img/logo.png" alt="" class="header__image" />
-        <ul class="header__nav">
-          <li class="header__nav-link">
-            <a href="index.html" class="header__nav-anchor">ホーム</a>
-          </li>
-          <li class="header__nav-link">
-            <a href="./html/service.html" class="header__nav-anchor">事業内容</a>
-          </li>
-          <li class="header__nav-link">
-            <a href="./html/blog.html" class="header__nav-anchor">社員ブログ</a>
-          </li>
-          <li class="header__nav-link">
-            <a href="./html/company.html" class="header__nav-anchor">会社概要</a>
-          </li>
-        </ul>
+        <div class="header__area">
+          <img src="./img/logo.png" alt="" class="header__image" />
+          <ul class="header__nav">
+            <li class="header__nav-link">
+              <a href="index.html" class="header__nav-anchor">ホーム</a>
+            </li>
+            <li class="header__nav-link">
+              <a href="./html/service.html" class="header__nav-anchor">事業内容</a>
+            </li>
+            <li class="header__nav-link">
+              <a href="./html/blog.html" class="header__nav-anchor">社員ブログ</a>
+            </li>
+            <li class="header__nav-link">
+              <a href="./html/company.html" class="header__nav-anchor">会社概要</a>
+            </li>
+          </ul>
+          <div class="header__drawer" id="drawerNav">
+            <ul class="header__drawer__nav">
+              <li class="header__drawer__nav-link">
+                <a href="index.html" class="header__drawer__nav-anchor">ホーム</a>
+              </li>
+              <li class="header__drawer__nav-link">
+                <a href="./html/service.html" class="header__drawer__nav-anchor">事業内容</a>
+              </li>
+              <li class="header__drawer__nav-link">
+                <a href="./html/blog.html" class="header__drawer__nav-anchor">社員ブログ</a>
+              </li>
+              <li class="header__drawer__nav-link">
+                <a href="./html/company.html" class="header__drawer__nav-anchor">会社概要</a>
+              </li>
+            </ul>
+          </div>
+          <div class="menu" id="menu">
+            <span class="menu__line--top"></span>
+            <span class="menu__line--middle"></span>
+            <span class="menu__line--bottom"></span>
+          </div>
+          <button class="scroll-top" id="scrollTopButton">↑</button>
+        </div>
       </header>
       <main class="main">
         <div class="top">
@@ -142,7 +166,6 @@
             </div>
           </div>
         </div>
-        <button class="scroll-top" id="scrollTopButton">↑</button>
       </main>
       <footer class="fotter">
         <small class="copyright">&copy;2020 TECH inc.</small>
