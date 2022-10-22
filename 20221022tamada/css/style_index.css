@@ -1,0 +1,171 @@
+.container {
+  width: 100%;
+}
+
+.main {
+  width: 100%;
+}
+
+.top {
+  background-image: url(../img/mv.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.top__text-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.top__text-area__title-ja {
+  font-size: 60px;
+  color: white;
+}
+.top__text-area__title-en {
+  font-size: 30px;
+  color: white;
+}
+
+.comment {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 0;
+}
+.comment__text-area {
+  width: 80%;
+}
+.comment__text-area__subject {
+  font-size: 40px;
+  color: white;
+  margin-bottom: 20px;
+}
+.comment__text-area__text {
+  font-size: 20px;
+  color: white;
+}
+
+.service {
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.service__title {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.service__area {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.service__area__card {
+  width: 49%;
+}
+@media screen and (max-width: 768px) {
+  .service__area {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .service__area__card {
+    width: 100%;
+  }
+}
+.service-image {
+  width: 100%;
+}
+.service-text-area {
+  margin: 10px 0;
+}
+.service-text-area__subject {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.service__button {
+  background-color: #cd0323;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 20px 50px;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.blog {
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.blog__title {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.blog__area {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.blog__area__card {
+  width: 33%;
+  text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+  .blog__area {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .blog__area__card {
+    width: 100%;
+    text-decoration: none;
+  }
+}
+.blog-image {
+  width: 100%;
+}
+.blog-text-area {
+  margin: 10px 0;
+}
+.blog-text-area__date {
+  margin-bottom: 10px;
+  font-weight: normal;
+  color: black;
+}
+.blog-text-area__subject {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: black;
+  font-size: 20px;
+}
+.blog__button {
+  background-color: #cd0323;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 20px 50px;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.company {
+  background-color: #cd0323;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  text-decoration: none;
+}
+.company__title {
+  font-size: 40px;
+  color: white;
+}

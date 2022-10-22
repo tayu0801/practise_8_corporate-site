@@ -1,0 +1,72 @@
+.container {
+  width: 100%;
+}
+
+.main {
+  width: 100%;
+}
+
+.top {
+  background-image: url(../img/mv.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+}
+.top__text-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.top__text-area__title {
+  font-size: 40px;
+  color: white;
+}
+
+.service {
+  padding: 80px;
+}
+
+.service__card {
+  display: flex;
+  padding: 10px;
+  border-top: solid 1px black;
+}
+.service__card:last-child {
+  border-bottom: solid 1px black;
+}
+
+.service-image {
+  width: 400px;
+}
+@media screen and (max-width: 768px) {
+  .service {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .service__card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .service-image {
+    width: 100%;
+  }
+}
+
+.service__card__text-area {
+  padding: 10px;
+}
+.service-subject {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+.service-text {
+  font-size: 20px;
+}

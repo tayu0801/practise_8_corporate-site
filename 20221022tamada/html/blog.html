@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>【JavaScript】演習問題 コーポレートサイト</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/style_common.css" />
+    <link rel="stylesheet" href="../css/style_blog.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <img class="header__image" src="../img/logo.png" alt="" />
+        <ul class="header__nav">
+          <li class="header__nav-link">
+            <a class="header__nav-anchor" href="../index.html">ホーム</a>
+          </li>
+          <li class="header__nav-link">
+            <a class="header__nav-anchor" href="./service.html">事業内容</a>
+          </li>
+          <li class="header__nav-link">
+            <a class="header__nav-anchor" href="./blog.html">社員ブログ</a>
+          </li>
+          <li class="header__nav-link">
+            <a class="header__nav-anchor" href="./company.html">会社概要</a>
+          </li>
+        </ul>
+      </header>
+      <main class="main">
+        <div class="top">
+          <div class="top__text-area">
+            <h1 class="top__text-area__title">社員ブログ</h1>
+          </div>
+        </div>
+        <div class="blog">
+          <a href="#" class="blog__card">
+            <img src="../img/blog.png" alt="" class="blog-image" />
+            <div class="blog-text-area">
+              <h4 class="blog-text-area__date">2019/07/17</h4>
+              <h3 class="blog-text-area__subject">会社を創業した理由</h3>
+            </div>
+          </a>
+          <a href="#" class="blog__card">
+            <img src="../img/blog.png" alt="" class="blog-image" />
+            <div class="blog-text-area">
+              <h4 class="blog-text-area__date">2019/11/11</h4>
+              <h3 class="blog-text-area__subject">ITエンジニアを育成する最強メソッド</h3>
+            </div>
+          </a>
+          <a href="#" class="blog__card">
+            <img src="../img/blog.png" alt="" class="blog-image" />
+            <div class="blog-text-area">
+              <h4 class="blog-text-area__date">2019/08/01</h4>
+              <h3 class="blog-text-area__subject">コーチングによるモチベーション向上理論</h3>
+            </div>
+          </a>
+          <a href="#" class="blog__card">
+            <img src="../img/blog.png" alt="" class="blog-image" />
+            <div class="blog-text-area">
+              <h4 class="blog-text-area__date">2020/09/10</h4>
+              <h3 class="blog-text-area__subject">プログラミング言語習得論</h3>
+            </div>
+          </a>
+          <a href="#" class="blog__card">
+            <img src="../img/blog.png" alt="" class="blog-image" />
+            <div class="blog-text-area">
+              <h4 class="blog-text-area__date">2020/12/01</h4>
+              <h3 class="blog-text-area__subject">エンジニア採用における注意点</h3>
+            </div>
+          </a>
+          <a href="#" class="blog__card">
+            <img src="../img/blog.png" alt="" class="blog-image" />
+            <div class="blog-text-area">
+              <h4 class="blog-text-area__date">2021/07/01</h4>
+              <h3 class="blog-text-area__subject">今年の抱負</h3>
+            </div>
+          </a>
+        </div>
+        <div class="inquire">
+          <div class="inquire__area">
+            <h2 class="inquire__area__title">お問い合わせ</h2>
+            <p class="inquire__area__text">お仕事のご依頼や採用に関してはお問い合わせにて承っております。</p>
+            <input type="button" id="openInquireBtn" value="お問い合わせ" class="inquire__button" />
+            <div id="modal" class="modal">
+              <div class="modal__container">
+                <div class="modal__container-inner">
+                  <div class="modal-block--right">
+                    <input type="button" id="closeInquireBtn" class="modal-inquire-close-button" value="×" />
+                  </div>
+                  <h2 class="modal-title">お問い合わせ</h2>
+                  <form action="detail.html" method="post">
+                    <div class="modal-block">
+                      <label class="modal-inquire-label" for="company">会社名</label>
+                      <input type="text" name="company" class="modal-inquire-text" id="company" />
+                    </div>
+                    <div class="modal-block">
+                      <label class="modal-inquire-label required" for="name">名前</label>
+                      <input type="text" name="name" class="modal-inquire-text" id="name" required />
+                    </div>
+                    <div class="modal-block">
+                      <label class="modal-inquire-label required" for="email">メールアドレス</label>
+                      <input type="email" name="email" class="modal-inquire-text" id="email" required />
+                    </div>
+                    <div class="modal-block">
+                      <label class="modal-inquire-label required" for="text">内容</label>
+                      <textarea name="text" cols="30" rows="10" class="modal-inquire-text" id="text" required> </textarea>
+                    </div>
+                    <input type="submit" value="お申し込み" class="modal-inquire-submit" />
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="scroll-top" id="scrollTopButton">↑</button>
+      </main>
+      <footer class="fotter">
+        <small class="copyright">&copy;2020 TECH inc.</small>
+        <ul class="fotter__nav">
+          <li class="fotter__nav-link">
+            <a href="../index.html" class="fotter__nav-anchor">ホーム</a>
+          </li>
+          <li class="fotter__nav-link">
+            <a href="./service.html" class="fotter__nav-anchor">事業内容</a>
+          </li>
+          <li class="fotter__nav-link">
+            <a href="./blog.html" class="fotter__nav-anchor">社員ブログ</a>
+          </li>
+          <li class="fotter__nav-link">
+            <a href="./company.html" class="fotter__nav-anchor">会社概要</a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>【JavaScript】演習問題 コーポレートサイト</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/style_common.css" />
+    <link rel="stylesheet" href="../css/style_service.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <img class="header__image" src="../img/logo.png" alt="" />
+        <ul class="header__nav">
+          <li class="header__nav-link">
+            <a class="header__nav-anchor" href="../index.html">ホーム</a>
+          </li>
+          <li class="header__nav-link">
+            <a class="header__nav-anchor" href="./service.html">事業内容</a>
+          </li>
+          <li class="header__nav-link">
+            <a class="header__nav-anchor" href="./blog.html">社員ブログ</a>
+          </li>
+          <li class="header__nav-link">
+            <a class="header__nav-anchor" href="./company.html">会社概要</a>
+          </li>
+        </ul>
+      </header>
+      <main class="main">
+        <div class="top">
+          <div class="top__text-area">
+            <h1 class="top__text-area__title">事業内容</h1>
+          </div>
+        </div>
+        <div class="service">
+          <div class="service__card">
+            <img src="../img/service1.png" alt="" class="service-image" />
+            <div class="service__card__text-area">
+              <h3 class="service-subject">人材育成事業</h3>
+              <p class="service-text">これまでに培った教育方法を生かして、短期間で即戦力のIT人材を育成します。</p>
+            </div>
+          </div>
+          <div class="service__card">
+            <img src="../img/service2.png" alt="" class="service-image" />
+            <div class="service__card__text-area">
+              <h3 class="service-subject">コーチング事業</h3>
+              <p class="service-text">目標達成を最短で実現するために、プロのコーチによるマンツーマンのサポートを実施します。</p>
+            </div>
+          </div>
+          <div class="service__card">
+            <img src="../img/service3.png" alt="" class="service-image" />
+            <div class="service__card__text-area">
+              <h3 class="service-subject">ITコンサル事業</h3>
+              <p class="service-text">経営戦略にIT戦略を策定し、システム開発の提案やシステムの最適化を通じて、企業の経営をサポートします。</p>
+            </div>
+          </div>
+          <div class="service__card">
+            <img src="../img/service4.png" alt="" class="service-image" />
+            <div class="service__card__text-area">
+              <h3 class="service-subject">デジタルトランスフォーメーション事業</h3>
+              <p class="service-text">人々の生活をよりよいものに変革するために様々なデジタル技術を活用し、革新的なソリューションやサービスを生み出します。</p>
+            </div>
+          </div>
+        </div>
+        <div class="inquire">
+          <div class="inquire__area">
+            <h2 class="inquire__area__title">お問い合わせ</h2>
+            <p class="inquire__area__text">お仕事のご依頼や採用に関してはお問い合わせにて承っております。</p>
+            <input type="button" id="openInquireBtn" value="お問い合わせ" class="inquire__button" />
+            <div id="modal" class="modal">
+              <div class="modal__container">
+                <div class="modal__container-inner">
+                  <div class="modal-block--right">
+                    <input type="button" id="closeInquireBtn" class="modal-inquire-close-button" value="×" />
+                  </div>
+                  <h2 class="modal-title">お問い合わせ</h2>
+                  <form action="detail.html" method="post">
+                    <div class="modal-block">
+                      <label class="modal-inquire-label" for="company">会社名</label>
+                      <input type="text" name="company" class="modal-inquire-text" id="company" />
+                    </div>
+                    <div class="modal-block">
+                      <label class="modal-inquire-label required" for="name">名前</label>
+                      <input type="text" name="name" class="modal-inquire-text" id="name" required />
+                    </div>
+                    <div class="modal-block">
+                      <label class="modal-inquire-label required" for="email">メールアドレス</label>
+                      <input type="email" name="email" class="modal-inquire-text" id="email" required />
+                    </div>
+                    <div class="modal-block">
+                      <label class="modal-inquire-label required" for="text">内容</label>
+                      <textarea name="text" cols="30" rows="10" class="modal-inquire-text" id="text" required> </textarea>
+                    </div>
+                    <input type="submit" value="お申し込み" class="modal-inquire-submit" />
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+                <button class="scroll-top" id="scrollTopButton">↑</button>
+      </main>
+      <footer class="fotter">
+        <small class="copyright">&copy;2020 TECH inc.</small>
+        <ul class="fotter__nav">
+          <li class="fotter__nav-link">
+            <a href="../index.html" class="fotter__nav-anchor">ホーム</a>
+          </li>
+          <li class="fotter__nav-link">
+            <a href="./service.html" class="fotter__nav-anchor">事業内容</a>
+          </li>
+          <li class="fotter__nav-link">
+            <a href="./blog.html" class="fotter__nav-anchor">社員ブログ</a>
+          </li>
+          <li class="fotter__nav-link">
+            <a href="./company.html" class="fotter__nav-anchor">会社概要</a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+        <script src="../js/main.js"></script>
+  </body>
+</html>
